@@ -39,9 +39,14 @@ var mouthX = 25;
 var mouthY = 250;
 var mouthW = 400;
 var mouthH = 60
+var eye1X = 70;
+var eye1Y = 70;
+var eye2offset = 300;
+var pupiloffset =20;
+
 
 function setup () {
-    createCanvas(600,400);
+    createCanvas(500,400);
     background(255,255,0);
     
     console.log("width:" + width + " " + "height:" + height)
@@ -49,12 +54,44 @@ function setup () {
 }
 
 function draw () {
+   noStroke();
+    //eye1
     // x, y, width, height
-    ellipse(70,70,100,100);
+    fill(255);
+    ellipse(eye1X,eye1Y,100,100);
     
-    ellipse(width/2,height/2,50,50);
+    fill(0,0,255)
+    ellipse(eye1X,eye1Y + pupiloffset,50,50);
     
+    //eye2
+    fill(255)
+    ellipse (eye1X + eye2offset,eye1Y,100,100);
+    
+    fill(0,0,255);
+    ellipse (eye1X + eye2offset,eye1Y + pupiloffset,50,50);
+    
+    //nose
+    fill(255);
+    triangle(width/2,height/2,(width/2) + 20,height/2 + 20,(width/2) - 20,height/2 + 20);
+    
+    
+    
+    //mouth
+    fill(255)
+    stroke(255,255,0);
+    strokeWeight(10);
     rect(mouthX,mouthY,mouthW,mouthH);
+    
     line(mouthX, mouthY + mouthH/2, mouthX + mouthW, mouthY + mouthH/2);
+    noStroke();
+    
+     fill('red');
+    arc(width/2 + 100,300,100,100,0,PI);
+   
+
     
 }
+function mousePressed(){
+        background('blue');
+        
+    }
