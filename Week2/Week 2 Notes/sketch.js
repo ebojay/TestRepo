@@ -90,8 +90,5 @@ function draw () {
    
 
     
-}
-function mousePressed(){
-        background('blue');
         
     }
