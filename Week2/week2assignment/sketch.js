@@ -12,7 +12,4 @@ function draw() {
   ellipse(440,325,200,150)
   ellipse(195,200,125,100)
   ellipse(160,325,200,150)
-  
- 
-  
-}
+  }
