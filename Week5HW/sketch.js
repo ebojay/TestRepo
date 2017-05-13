@@ -1,19 +1,19 @@
-var questions = ["Iceland is covered in ice",
-  "Which ocean lies on the east coast of the United States",
-  "Which is the world's highest mountain?",
-  "How many great lakes are there?",
-  "Which is the longest river in the U.S.?"
+var questions = ["There are 47 states in the Continental US",
+  "What is the capitol of Wyoming",
+  "What is the capitol of New York?",
+  "What is the capitol of Utah?",
+  "What is the capitol of Lousiana?"
 ];
 
 var choices = [
   ["False", "True"],
-  ["Pacific", "Indian", "Atlantic", "Eastern"],
-  ["Mount Everest", "Killimanjaro", "Makalu", "K2"],
-  ["6", "3", "5"],
-  ["Missouri", "Yukon", "Colorado"]
+  ["Atlanta", "Madison", "Cheyenne", "Portland"],
+  ["Albany", "Buffalo", "New York City", "Syracuse"],
+  ["Hartford", "Provo", "Salt Lake City"],
+  ["Baton Rouge", "New Orleans", "Lafayette"]
 ];
 
-var answers = ["False", "Atlantic", "Mount Everest", "5", "Missouri"];
+var answers = ["False", "Cheyenne", "Albany", "Salt Lake City", "Baton Rouge"];
 
 var qCounter = 0;
 
